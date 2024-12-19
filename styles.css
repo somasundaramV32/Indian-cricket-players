@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('team-india-4k-cricket-field.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 5px #fff;
+    }
+    to {
+        text-shadow: 2px 2px 20px #ff0000;
+    }
+}
+.can {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.roll {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.roll:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.8);
+}
+.imgs {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.imgs:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.name {
+    font-size: 1.5rem;
+    color: #18adc7;
+    margin: 10px 0;
+}
+.content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .can {
+        gap: 15px;
+    }
+    .roll {
+        width: 90%;
+        padding: 15px;
+    }
+    .imgs {
+        border-radius: 10px;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .content {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .can {
+        gap: 10px;
+    }
+    .roll {
+        width: 95%;
+        padding: 10px;
+    }
+    .imgs {
+        border-radius: 8px;
+    }
+    .name {
+        font-size: 1rem;
+    }
+    .content {
+        font-size: 0.8rem;
+    }
+}
